@@ -1,0 +1,20 @@
+{
+
+  "description": "https://bugzilla.mozilla.org/show_bug.cgi?id=1665035",
+  "manifest_version": 2,
+  "name": "dckids.com Fix",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://d3qlaywcwingl6.cloudfront.net/content/DC/Html5Game/*"],
+      "js": ["fix.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ]
+
+}
