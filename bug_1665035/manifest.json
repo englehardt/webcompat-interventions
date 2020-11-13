@@ -10,7 +10,10 @@
 
   "content_scripts": [
     {
-      "matches": ["https://d3qlaywcwingl6.cloudfront.net/content/DC/Html5Game/*"],
+      "matches": [
+        "https://d3qlaywcwingl6.cloudfront.net/content/DC/Html5Game/*",
+        "https://d3qlaywcwingl6.cloudfront.net/*/game/content/*"
+      ],
       "js": ["fix.js"],
       "all_frames": true,
       "run_at": "document_start"
