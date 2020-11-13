@@ -1,8 +1,8 @@
 {
 
-  "description": "https://bugzilla.mozilla.org/show_bug.cgi?id=1641521",
+  "description": "https://bugzilla.mozilla.org/show_bug.cgi?id=1631811",
   "manifest_version": 2,
-  "name": "Twitter Video Fix",
+  "name": "IndexedDB Storage Blocking Fix",
   "version": "1.0",
   "icons": {
     "48": "icons/border-48.png"
@@ -10,8 +10,8 @@
 
   "content_scripts": [
     {
-      "matches": ["https://twitter.com/i/videos/tweet/*"],
-      "js": ["twitterVideoFix.js"],
+      "matches": ["https://datastudio.google.com/embed/reporting/*"],
+      "js": ["indexedDBBlockingFix.js"],
       "all_frames": true,
       "run_at": "document_start"
     }
