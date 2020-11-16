@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://d3qlaywcwingl6.cloudfront.net/content/DC/Html5Game/*",
+        "https://d3qlaywcwingl6.cloudfront.net/content/*/Html5Game/*",
         "https://d3qlaywcwingl6.cloudfront.net/*/game/content/*"
       ],
       "js": ["fix.js"],
